@@ -36,6 +36,10 @@ public class Content extends AppCompatActivity {
                         fragment = new CameraFragment();
                         break;
 
+                    case R.id.menuUser:
+                        fragment = new VirtualizationFragment();
+                        break;
+
                     case R.id.menuHelp:
                         fragment = new HelpFragment();
                         break;

@@ -7,6 +7,37 @@
     android:background="#fcfcfc"
     tools:context=".PlantsFragment">
 
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="300dp"
+          android:layout_height="40dp"
+          app:cardCornerRadius="10dp"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="85dp"
+         app:cardBackgroundColor="#e8f6ee">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/baseline_search_24"
+               android:layout_alignParentRight="true"
+               android:layout_marginTop="5dp"
+               android:layout_marginRight="10dp"/>
+         </RelativeLayout>
+      </androidx.cardview.widget.CardView>
+
+
+
+   </RelativeLayout>
+
+
+
    <Button
        android:layout_width="35dp"
        android:layout_height="30dp"
@@ -28,9 +59,10 @@
           android:textStyle="bold" />
 
       <androidx.cardview.widget.CardView
-          android:layout_width="150dp"
+          android:layout_width="170dp"
           android:layout_height="170dp"
-          android:layout_marginLeft="30dp"
+          android:elevation="2dp"
+          android:layout_marginLeft="35dp"
           android:layout_marginTop="150dp"
           android:backgroundTint="#e8f6ee"
           app:cardCornerRadius="7dp">
@@ -52,7 +84,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginBottom="25dp"
                 android:fontFamily="sans-serif-condensed"
                 android:text="Aloe Vera"
@@ -66,7 +98,7 @@
                 android:text="Lorem ipsum dolor si"
                android:textSize="12dp"
                android:layout_alignParentBottom="true"
-               android:layout_marginLeft="20dp"
+               android:layout_marginLeft="10dp"
                android:layout_marginBottom="5dp"
                 android:fontFamily="sans-serif-condensed"
                 android:textColor="#8B9F5B"/>
@@ -75,7 +107,169 @@
          </RelativeLayout>
 
 
+
+
       </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="170dp"
+          android:elevation="2dp"
+          android:layout_height="230dp"
+          android:layout_marginLeft="225dp"
+          android:layout_marginTop="150dp"
+          android:backgroundTint="#e8f6ee"
+          app:cardCornerRadius="7dp">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/buttonLagundi"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:src="@drawable/tulsii" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Tulsi"
+                android:textColor="#8B9F5B"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor si"
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#8B9F5B"/>
+
+
+         </RelativeLayout>
+
+
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="170dp"
+          android:elevation="2dp"
+          android:layout_height="230dp"
+          android:layout_marginLeft="30dp"
+          android:layout_marginTop="340dp"
+          android:backgroundTint="#e8f6ee"
+          app:cardCornerRadius="7dp">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/buttoncactus"
+                android:layout_width="120dp"
+                android:layout_height="180dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:src="@drawable/tulsii" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Tulsi"
+                android:textColor="#8B9F5B"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor si"
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#8B9F5B"/>
+
+
+         </RelativeLayout>
+
+
+
+
+      </androidx.cardview.widget.CardView>
+
+      <androidx.cardview.widget.CardView
+          android:layout_width="170dp"
+          android:layout_height="190dp"
+          android:elevation="2dp"
+          android:layout_marginLeft="225dp"
+          android:layout_marginTop="400dp"
+          android:backgroundTint="#e8f6ee"
+          app:cardCornerRadius="7dp">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/buttonginger"
+                android:layout_width="120dp"
+                android:layout_height="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:src="@drawable/vase_aloevera" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="25dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Aloe Vera"
+                android:textColor="#8B9F5B"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lorem ipsum dolor si"
+                android:textSize="12dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="#8B9F5B"/>
+
+
+         </RelativeLayout>
+
+
+
+
+      </androidx.cardview.widget.CardView>
+
 
 
    </RelativeLayout>
