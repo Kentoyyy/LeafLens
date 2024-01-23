@@ -8,13 +8,6 @@
     android:background="#EFEFEF"
     android:id="@+id/body_container">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Home"
-        android:layout_centerInParent="true"
-        android:textColor="#535353"
-        android:textSize="35dp"/>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
