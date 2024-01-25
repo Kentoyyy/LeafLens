@@ -45,6 +45,7 @@
        android:layout_width="35dp"
        android:layout_height="30dp"
        android:layout_margin="30dp"
+       android:id="@+id/btnBack"
        android:background="@drawable/baseline_arrow_back_24"/>
 
    <RelativeLayout
@@ -92,12 +93,12 @@
 
                     <ImageView
                         android:id="@+id/buttonAloevera"
-                        android:layout_width="120dp"
+                        android:layout_width="115dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/aloevera_leaves" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -139,13 +140,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloevera"
+                        android:id="@+id/btnTulsi"
                         android:layout_width="120dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="-30dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/tulsii" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -154,7 +155,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Tulsi"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -235,13 +236,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloeveraa"
+                        android:id="@+id/btnSambong"
                         android:layout_width="120dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/sambong" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -250,7 +251,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Blumea balsamifera"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -282,13 +283,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloeveraa"
+                        android:id="@+id/btnYerbaBuena"
                         android:layout_width="120dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="20dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/yerba_buena" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -297,7 +298,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Yerba Buena"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -331,13 +332,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloeveraa"
+                        android:id="@+id/btnWildTea"
                         android:layout_width="120dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="15dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/wildtea" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -346,7 +347,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Wild Tea"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -379,13 +380,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloeveraaa"
-                        android:layout_width="120dp"
+                        android:id="@+id/btnAmpalaya"
+                        android:layout_width="130dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
-                        android:layout_marginTop="5dp"
+                        android:layout_marginTop="20dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/ampalaya" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -394,7 +395,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Ampalaya"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -427,13 +428,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloeveraaaa"
+                        android:id="@+id/btnLagundi"
                         android:layout_width="120dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/lagundi" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -442,7 +443,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Lagundi"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
@@ -475,13 +476,13 @@
                      android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/buttonAloeveraaaa"
+                        android:id="@+id/btnAkapulko"
                         android:layout_width="120dp"
                         android:layout_height="150dp"
                         android:layout_centerHorizontal="true"
                         android:layout_marginTop="5dp"
                         android:clickable="true"
-                        android:src="@drawable/vase_aloevera" />
+                        android:src="@drawable/akapulko" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -490,7 +491,7 @@
                         android:layout_marginLeft="10dp"
                         android:layout_marginBottom="25dp"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Aloe Vera"
+                        android:text="Akapulko"
                         android:textColor="#8B9F5B"
                         android:textSize="14dp"
                         android:textStyle="bold" />
