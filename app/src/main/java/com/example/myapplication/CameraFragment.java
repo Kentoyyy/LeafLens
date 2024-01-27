@@ -34,7 +34,7 @@ import java.nio.ByteOrder;
 
 public class CameraFragment extends Fragment {
 
-    TextView result;
+    TextView result,confidence;
     ImageView imageView;
     Button picture;
     int imageSize = 224;
@@ -94,6 +94,25 @@ public class CameraFragment extends Fragment {
 
             ModelUnquant.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
+
+            float[] confidences = outputFeature0.getFloatArray();
+            int maxPos = 0;
+            float maxConfidence = 0;
+            for(int i = 0; i < confidences.length; i++){
+                if(confidences[i] > maxConfidence){
+                    maxConfidence = confidences[i];
+                    maxPos = 1;
+                }
+            }
+            String [] classes = {"Lagundi", "Aloe Vera"};
+            result.setText(classes[maxPos]);
+
+            String s = "";
+            for(int i = 0; i < classes.length; i++){
+                s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
+
+            }
+            confidence.setText(s);
 
             // Releases model resources if no longer used.
             model.close();
