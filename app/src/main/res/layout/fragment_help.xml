@@ -16,47 +16,47 @@
             android:layout_height="150dp"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="70dp"
-            android:backgroundTint="#e7fee2"
+            android:backgroundTint="#ebf9ea"
             app:cardCornerRadius="10dp">
 
             <Button
+                android:id="@+id/btn_plantstip"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
-                android:textSize="11dp"
-                android:textAllCaps="false"
-                android:drawableLeft="@drawable/leafbtn"
-
                 android:layout_margin="15dp"
                 android:backgroundTint="#FBFBFB"
+
+                android:drawableLeft="@drawable/leafbtn"
                 android:text="Plant tips"
-                android:id="@+id/btn_plantstip"/>
+                android:textAllCaps="false"
+                android:textSize="11dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="75dp"
                 android:text="Help your plant survive"
-                android:layout_marginLeft="20dp"
-                android:textSize="16dp"
                 android:textColor="#494949"
                 android:textFontWeight="700"
-                android:layout_marginTop="75dp"/>
+                android:textSize="16dp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="when you are away"
                 android:layout_marginLeft="20dp"
-                android:textSize="16dp"
+                android:layout_marginTop="95dp"
+                android:text="when you are away"
                 android:textColor="#494949"
                 android:textFontWeight="700"
-                android:layout_marginTop="95dp"/>
-            
+                android:textSize="16dp" />
+
             <ImageView
                 android:layout_width="150dp"
                 android:layout_height="120dp"
-                android:background="@drawable/vase_aloeveraa"
                 android:layout_marginLeft="220dp"
-                android:layout_marginTop="10dp"/>
+                android:layout_marginTop="10dp"
+                android:background="@drawable/vase_aloeveraa" />
 
 
         </androidx.cardview.widget.CardView>
@@ -65,21 +65,22 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Category"
             android:layout_marginLeft="40dp"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:letterSpacing="0.05"
             android:layout_marginTop="260dp"
-            android:textColor="#494949"/>
+            android:letterSpacing="0.05"
+            android:text="Category"
+            android:textColor="#494949"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
-        <ScrollView
+        <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="80dp"
+            android:layout_height="70dp"
             android:layout_marginLeft="40dp"
-            android:elevation="2dp"
-            android:layout_marginTop="300dp">
+
+            android:layout_marginTop="310dp"
+            android:elevation="2dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -93,7 +94,7 @@
 
 
                     <androidx.cardview.widget.CardView
-                        android:layout_width="190dp"
+                        android:layout_width="170dp"
                         android:layout_height="70dp"
                         android:backgroundTint="#ebf9ea"
                         android:elevation="2dp"
@@ -106,11 +107,89 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
                                 android:text="Tropical"
-                                android:textColor="#494949"
-                                android:textSize="15dp"
-                                android:textStyle="bold"
-                                android:layout_margin="20dp"/>
+                                android:textColor="#757575"
+                                android:textFontWeight="500"
+                                android:textSize="14dp" />
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="70dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/tropical" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="180dp"
+                        android:backgroundTint="#ebf9ea"
+                        android:elevation="2dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="18dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Succulent"
+                                android:textColor="#757575"
+                                android:textFontWeight="500"
+                                android:textSize="14dp" />
+
+                            <ImageButton
+                                android:layout_width="90dp"
+                                android:layout_height="70dp"
+                                android:layout_alignParentRight="true"
+
+                                android:background="@drawable/succelent" />
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="170dp"
+                        android:layout_height="70dp"
+                        android:layout_marginLeft="360dp"
+                        android:backgroundTint="#ebf9ea"
+                        android:elevation="2dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="20dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginEnd="20dp"
+                                android:layout_marginBottom="20dp"
+                                android:text="Tropical"
+                                android:textColor="#757575"
+                                android:textFontWeight="500"
+                                android:textSize="14dp" />
+
+                            <ImageButton
+                                android:layout_width="80dp"
+                                android:layout_height="70dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/tropical" />
                         </RelativeLayout>
 
                     </androidx.cardview.widget.CardView>
@@ -119,10 +198,18 @@
 
 
             </LinearLayout>
-        </ScrollView>
+        </HorizontalScrollView>
 
-
-
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="430dp"
+            android:letterSpacing="0.03"
+            android:text="Plant Guide"
+            android:textColor="#494949"
+            android:textSize="20dp"
+            android:textStyle="bold" />
 
 
     </RelativeLayout>
