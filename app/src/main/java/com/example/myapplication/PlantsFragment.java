@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 
 
@@ -17,22 +18,25 @@ public class PlantsFragment extends Fragment {
 
     ImageView btnaloe,btntulsi,btnwildtea;
 
-    SearchView searchView;
-    RecyclerView recyclerView;
+    Button btnbackplant;
+
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_plants, container, false);
 
-        recyclerView = view.findViewById(R.id.recycleView);
-        searchView = view.findViewById(R.id.recycleView);
+
+
 
         btnaloe = view.findViewById(R.id.buttonAloevera);
 
         btntulsi = view.findViewById(R.id.btnTulsi);
 
         btnwildtea = view.findViewById(R.id.btnWildTea);
+
+
 
         btnwildtea.setOnClickListener(new View.OnClickListener() {
             @Override

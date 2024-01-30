@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#B1BFA2"
+    android:background="#ebf9ea"
     tools:context=".CameraFragment">
 
     <RelativeLayout
@@ -16,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="100dp"
-         android:layout_centerHorizontal="true"
+            android:layout_centerHorizontal="true"
             android:text="Take Picture"
             android:textAllCaps="false"
             android:textSize="21sp"
@@ -50,7 +50,6 @@
             android:id="@+id/result"
             android:layout_below="@+id/classified"
             />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -62,7 +61,6 @@
             android:layout_below="@+id/result"
             android:layout_marginTop="30sp"
             />
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

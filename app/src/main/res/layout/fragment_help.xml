@@ -2,16 +2,130 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:background="#B1BFA2"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#fafafa"
     android:layout_height="match_parent"
     tools:context=".HelpFragment">
 
-   <TextView android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:text="Hello! under construction"
-      android:textSize="25dp"
-      android:textStyle="bold"
-      android:layout_gravity="center"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="#e7fee2"
+            app:cardCornerRadius="10dp">
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:textAllCaps="false"
+                android:drawableLeft="@drawable/leafbtn"
+
+                android:layout_margin="15dp"
+                android:backgroundTint="#FBFBFB"
+                android:text="Plant tips"
+                android:id="@+id/btn_plantstip"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Help your plant survive"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:textColor="#494949"
+                android:textFontWeight="700"
+                android:layout_marginTop="75dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="when you are away"
+                android:layout_marginLeft="20dp"
+                android:textSize="16dp"
+                android:textColor="#494949"
+                android:textFontWeight="700"
+                android:layout_marginTop="95dp"/>
+            
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="120dp"
+                android:background="@drawable/vase_aloeveraa"
+                android:layout_marginLeft="220dp"
+                android:layout_marginTop="10dp"/>
+
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Category"
+            android:layout_marginLeft="40dp"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="260dp"
+            android:textColor="#494949"/>
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="80dp"
+            android:layout_marginLeft="40dp"
+            android:elevation="2dp"
+            android:layout_marginTop="300dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="2dp"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="190dp"
+                        android:layout_height="70dp"
+                        android:backgroundTint="#ebf9ea"
+                        android:elevation="2dp"
+                        app:cardCornerRadius="10dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tropical"
+                                android:textColor="#494949"
+                                android:textSize="15dp"
+                                android:textStyle="bold"
+                                android:layout_margin="20dp"/>
+                        </RelativeLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+
+    </RelativeLayout>
 
 
 </FrameLayout>

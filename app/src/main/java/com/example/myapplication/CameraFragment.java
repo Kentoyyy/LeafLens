@@ -34,7 +34,7 @@ import java.nio.ByteOrder;
 
 public class CameraFragment extends Fragment {
 
-    TextView result,confidence;
+    TextView result, confidence;
     ImageView imageView;
     Button picture;
     int imageSize = 224;
@@ -45,6 +45,7 @@ public class CameraFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_camera, container, false);
 
         result.findViewById(R.id.result);
+        confidence.findViewById(R.id.confidence);
         imageView.findViewById(R.id.imageView);
         picture.findViewById(R.id.button);
 
@@ -129,7 +130,6 @@ public class CameraFragment extends Fragment {
             imageView.setImageBitmap(image);
 
             image = Bitmap.createScaledBitmap(image, imageSize, imageSize, false);
-
             classifyImage(image);
         }
         super.onActivityResult(requestCode, resultCode, data);
