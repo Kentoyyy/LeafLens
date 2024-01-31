@@ -17,6 +17,8 @@ public class Content extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_content);
 
+        getSupportActionBar().hide();
+
 
 
         navigationView = findViewById(R.id.bottom_navigation);
