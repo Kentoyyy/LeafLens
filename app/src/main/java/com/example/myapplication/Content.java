@@ -20,16 +20,16 @@ public class Content extends AppCompatActivity {
 
 
         navigationView = findViewById(R.id.bottom_navigation);
-        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new PlantsFragment()).commit();
-        navigationView.setSelectedItemId(R.id.menuPlant);
+        getSupportFragmentManager().beginTransaction().replace(R.id.body_container, new HomeFragment()).commit();
+        navigationView.setSelectedItemId(R.id.MenuHome);
         navigationView.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
             @Override
             public void onNavigationItemReselected(@NonNull MenuItem item) {
                 Fragment fragment = null;
 
                 switch (item.getItemId()){
-                    case R.id.menuPlant:
-                        fragment = new PlantsFragment();
+                    case R.id.MenuHome:
+                        fragment = new HomeFragment();
                         break;
 
                     case R.id.menuScan:

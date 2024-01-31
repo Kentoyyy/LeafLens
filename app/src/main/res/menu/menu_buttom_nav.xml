@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
-        android:id="@+id/menuPlant"
-        android:title="Plants"
+        android:id="@+id/MenuHome"
+        android:title="Home"
         android:icon="@drawable/leaf"/>
 
     <item
         android:id="@+id/menuScan"
-        android:title="SCan"
+        android:title="Camera"
         android:icon="@drawable/baseline_photo_camera_24"/>
 
     <item
@@ -17,7 +17,7 @@
 
     <item
         android:id="@+id/menuHelp"
-        android:title="Users"
+        android:title="Help"
         android:icon="@drawable/baseline_help_24"/>
 
 </menu>

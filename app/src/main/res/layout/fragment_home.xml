@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fafafa"
-    tools:context=".HelpFragment">
+    tools:context=".HomeFragment">
 
 
     <androidx.cardview.widget.CardView
@@ -257,6 +257,43 @@
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/aloevera_leaves"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Aloe vera"
+
+                            android:textSize="13dp"
+                            android:textColor="#575757"
+                            android:layout_marginTop="200dp"
+                            android:layout_marginLeft="15dp"/>
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="150dp"
+                    android:layout_height="250dp"
+                    android:layout_marginLeft="20dp"
+                    app:cardBackgroundColor="#ebf9ea"
+                    app:cardCornerRadius="8dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageButton
+                            android:layout_width="120dp"
+                            android:layout_height="170dp"
+                            android:layout_centerHorizontal="true"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
+                            android:layout_marginTop="20dp"
                             android:src="@drawable/aloevera_leaves"/>
 
                         <TextView
@@ -287,6 +324,8 @@
                         <ImageButton
                             android:layout_width="120dp"
                             android:layout_height="170dp"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
                             android:src="@drawable/aloevera_leaves"/>
@@ -320,38 +359,8 @@
                             android:layout_width="120dp"
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
-                            android:layout_marginTop="20dp"
-                            android:src="@drawable/aloevera_leaves"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Aloe vera"
-                            android:textSize="13dp"
-                            android:textColor="#575757"
-                            android:layout_marginTop="200dp"
-                            android:layout_marginLeft="15dp"/>
-                    </RelativeLayout>
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="150dp"
-                    android:layout_height="250dp"
-                    android:layout_marginLeft="20dp"
-                    app:cardBackgroundColor="#ebf9ea"
-                    app:cardCornerRadius="8dp">
-
-                    <RelativeLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent">
-
-
-                        <ImageButton
-                            android:layout_width="120dp"
-                            android:layout_height="170dp"
-                            android:layout_centerHorizontal="true"
+                            android:background="#fff"
+                            android:scaleType="fitCenter"
                             android:layout_marginTop="20dp"
                             android:src="@drawable/aloevera_leaves"/>
 
