@@ -38,8 +38,8 @@ public class Content extends AppCompatActivity {
                         fragment = new CameraFragment();
                         break;
 
-                    case R.id.menuUser:
-                        fragment = new VirtualizationFragment();
+                    case R.id.menuWater:
+                        fragment = new WaterFragment();
                         break;
 
                     case R.id.menuHelp:

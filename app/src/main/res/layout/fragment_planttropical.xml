@@ -8,21 +8,16 @@
     tools:context=".PlantTropicalFragment">
 
 
+    <androidx.cardview.widget.CardView
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="90dp"
+        app:cardBackgroundColor="#ebf9ea"
+        app:cardCornerRadius="10dp">
 
 
-
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="320dp"
-            android:layout_height="45dp"
-            android:layout_marginLeft="50dp"
-            android:layout_marginTop="90dp"
-            app:cardBackgroundColor="#ebf9ea"
-            app:cardCornerRadius="10dp">
-
-        </androidx.cardview.widget.CardView>
-
-
+    </androidx.cardview.widget.CardView>
 
 
     <Button
@@ -316,7 +311,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="match_parent">
 
-                             <ImageView
+                            <ImageView
                                 android:id="@+id/btnWildTea"
                                 android:layout_width="120dp"
                                 android:layout_height="150dp"
