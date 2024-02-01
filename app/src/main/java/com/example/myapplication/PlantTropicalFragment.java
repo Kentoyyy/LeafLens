@@ -29,7 +29,7 @@ public class PlantTropicalFragment extends Fragment {
 
         btnbittergroud = view.findViewById(R.id.btnAmpalaya);
 
-        btnyerbabuena = view.findViewById(R.id.btnSambong);
+        btnyerbabuena = view.findViewById(R.id.btnYerba);
 
         btnaloe = view.findViewById(R.id.buttonAloevera);
 
@@ -40,23 +40,7 @@ public class PlantTropicalFragment extends Fragment {
 
         btnbacktropical = view.findViewById(R.id.btnBackTl);
 
-        btnbittergroud.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment backTropical = new BittergourdFragment();
-                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.body_container, backTropical).commit();
-            }
-        });
 
-        btnyerbabuena.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Fragment backTropical = new YerbaBuenaFragment();
-                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.body_container, backTropical).commit();
-            }
-        });
 
 
         btnbacktropical.setOnClickListener(new View.OnClickListener() {
@@ -73,6 +57,24 @@ public class PlantTropicalFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Fragment plantcontent = new WildTeaFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, plantcontent).commit();
+            }
+        });
+
+        btnbittergroud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment plantcontent = new BittergourdFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, plantcontent).commit();
+            }
+        });
+
+        btnyerbabuena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment plantcontent = new YerbaBuenaFragment();
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.body_container, plantcontent).commit();
             }

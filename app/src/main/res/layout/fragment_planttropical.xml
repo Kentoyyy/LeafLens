@@ -215,13 +215,13 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/btnSambong"
+                                android:id="@+id/btnYerba"
                                 android:layout_width="120dp"
                                 android:layout_height="150dp"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
                                 android:clickable="true"
-                                android:src="@drawable/sambong" />
+                                android:src="@drawable/yerba_buena" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -230,7 +230,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginBottom="25dp"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="Blumea balsamifera"
+                                android:text="Yerba Buena"
                                 android:textColor="#8B9F5B"
                                 android:textSize="14dp"
                                 android:textStyle="bold" />
@@ -263,7 +263,7 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/btnYerbaBuena"
+                                android:id="@+id/btnYerba"
                                 android:layout_width="120dp"
                                 android:layout_height="150dp"
                                 android:layout_centerHorizontal="true"

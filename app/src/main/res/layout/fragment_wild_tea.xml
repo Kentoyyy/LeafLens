@@ -8,6 +8,7 @@
     <Button
         android:layout_width="35dp"
         android:layout_height="30dp"
+        android:id="@+id/backbtntropical"
         android:layout_margin="30dp"
         android:background="@drawable/baseline_arrow_back_24" />
 
@@ -19,7 +20,7 @@
             android:layout_width="300dp"
             android:layout_height="400dp"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="60dp"
             android:elevation="2dp"
             android:src="@drawable/wildtea" />
 
