@@ -8,7 +8,6 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
 
 
@@ -31,7 +30,7 @@ public class HomeFragment extends Fragment {
         btntropical.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment plantcontent = new PlantsFragment();
+                Fragment plantcontent = new PlantTropicalFragment();
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 ft.replace(R.id.body_container, plantcontent).commit();
             }

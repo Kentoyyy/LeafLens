@@ -124,6 +124,7 @@
                         android:layout_height="100dp"
                         android:backgroundTint="#ebf9ea"
                         android:elevation="2dp"
+
                         app:cardCornerRadius="10dp">
 
                         <RelativeLayout

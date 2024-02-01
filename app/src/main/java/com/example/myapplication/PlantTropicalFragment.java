@@ -2,10 +2,8 @@ package com.example.myapplication;
 
 import android.os.Bundle;
 
-import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,18 +12,18 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 
-public class PlantsFragment extends Fragment {
+public class PlantTropicalFragment extends Fragment {
 
     ImageView btnaloe,btntulsi,btnwildtea;
 
-    Button btnbackplant;
+    Button btnbacktropical;
 
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_plants, container, false);
+        View view = inflater.inflate(R.layout.fragment_planttropical, container, false);
 
 
 
@@ -36,6 +34,18 @@ public class PlantsFragment extends Fragment {
 
         btnwildtea = view.findViewById(R.id.btnWildTea);
 
+
+        btnbacktropical = view.findViewById(R.id.btnBackTl);
+
+
+        btnbacktropical.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment backTropical = new HomeFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, backTropical).commit();
+            }
+        });
 
 
         btnwildtea.setOnClickListener(new View.OnClickListener() {

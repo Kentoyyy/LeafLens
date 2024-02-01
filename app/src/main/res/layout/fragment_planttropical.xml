@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fcfcfc"
-    tools:context=".PlantsFragment">
+    tools:context=".PlantTropicalFragment">
 
 
 
@@ -26,7 +26,7 @@
 
 
     <Button
-        android:id="@+id/btnBack"
+        android:id="@+id/btnBackTl"
         android:layout_width="35dp"
         android:layout_height="30dp"
         android:layout_margin="30dp"
@@ -139,7 +139,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginBottom="25dp"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="Tulsi"
+                                android:text="Sambong"
                                 android:textColor="#8B9F5B"
                                 android:textSize="14dp"
                                 android:textStyle="bold" />
