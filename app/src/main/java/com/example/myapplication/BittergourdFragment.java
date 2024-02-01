@@ -11,26 +11,30 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class AloeVeraFragment extends Fragment {
+public class BittergourdFragment extends Fragment {
 
-    Button btnbackaloe;
+    Button backbtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.fragment_plants_aloevera, container, false);
+        View view = inflater.inflate(R.layout.fragment_bittergourd, container, false);
 
-        btnbackaloe = v.findViewById(R.id.btnbackAloevera);
 
-        btnbackaloe.setOnClickListener(new View.OnClickListener() {
+        backbtn = view.findViewById(R.id.backbtntropical);
+
+        backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment aloevera = new PlantTropicalFragment();
+                Fragment Bittergroud = new PlantTropicalFragment();
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.body_container, aloevera).commit();
+                ft.replace(R.id.body_container, Bittergroud).commit();
             }
         });
 
-        return v;
+
+
+        return view;
     }
 }

@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 public class PlantTropicalFragment extends Fragment {
 
-    ImageView btnaloe,btntulsi,btnwildtea;
+    ImageView btnaloe,btntulsi,btnwildtea,btnbittergroud,btnyerbabuena;
 
     Button btnbacktropical;
 
@@ -27,6 +27,9 @@ public class PlantTropicalFragment extends Fragment {
 
 
 
+        btnbittergroud = view.findViewById(R.id.btnAmpalaya);
+
+        btnyerbabuena = view.findViewById(R.id.btnSambong);
 
         btnaloe = view.findViewById(R.id.buttonAloevera);
 
@@ -36,6 +39,24 @@ public class PlantTropicalFragment extends Fragment {
 
 
         btnbacktropical = view.findViewById(R.id.btnBackTl);
+
+        btnbittergroud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment backTropical = new BittergourdFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, backTropical).commit();
+            }
+        });
+
+        btnyerbabuena.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment backTropical = new YerbaBuenaFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, backTropical).commit();
+            }
+        });
 
 
         btnbacktropical.setOnClickListener(new View.OnClickListener() {

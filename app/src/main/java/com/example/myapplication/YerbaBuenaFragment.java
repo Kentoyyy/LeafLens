@@ -1,7 +1,6 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
-
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
@@ -11,26 +10,27 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class AloeVeraFragment extends Fragment {
+public class YerbaBuenaFragment extends Fragment {
 
-    Button btnbackaloe;
+    Button backbtn;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v= inflater.inflate(R.layout.fragment_plants_aloevera, container, false);
+        View view = inflater.inflate(R.layout.fragment_yerba_buena, container, false);
 
-        btnbackaloe = v.findViewById(R.id.btnbackAloevera);
+        backbtn = view.findViewById(R.id.backbtntropical);
 
-        btnbackaloe.setOnClickListener(new View.OnClickListener() {
+        backbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Fragment aloevera = new PlantTropicalFragment();
+                Fragment plantcontent = new PlantTropicalFragment();
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
-                ft.replace(R.id.body_container, aloevera).commit();
+                ft.replace(R.id.body_container, plantcontent).commit();
             }
         });
 
-        return v;
+        return view;
     }
 }
