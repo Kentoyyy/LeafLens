@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8f6ee"
+    tools:context=".TangladFragment">
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="30dp"
+        android:layout_margin="30dp"
+        android:id="@+id/backbtntropical"
+        android:background="@drawable/baseline_arrow_back_24" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="400dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:elevation="2dp"
+            android:src="@drawable/tanglad" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:layout_height="320dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="390dp"
+            android:elevation="2dp"
+            app:cardBackgroundColor="#fff"
+            app:cardCornerRadius="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="Cymbopogon citratus"
+                android:textColor="#00600f"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="55dp"
+                android:text="Xerovit"
+                android:textColor="#00600f"
+                android:textSize="13dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_marginTop="100dp"
+                android:textFontWeight="500"
+                android:layout_marginLeft="20dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aloe vera is a medicinal herb with thick, gel-filled leaves."
+                android:textSize="13dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="150dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="It's used for its soothing and healing properties"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="165dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="topically for sunburns, cuts, and skin irritation."
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="180dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Easy to grow and commonly found in skincare products."
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="195dp"/>
+
+
+            <Button
+                android:layout_width="130dp"
+                android:layout_height="35dp"
+                android:text="More info"
+                android:textSize="11dp"
+                android:background="@drawable/btnplant_round"
+                android:textColor="#fff"
+                android:layout_marginTop="250dp"
+                android:layout_marginLeft="110dp"/>
+
+
+
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+
+</FrameLayout>

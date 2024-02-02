@@ -263,13 +263,13 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/btnYerba"
+                                android:id="@+id/tanglad"
                                 android:layout_width="120dp"
                                 android:layout_height="150dp"
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="20dp"
                                 android:clickable="true"
-                                android:src="@drawable/yerba_buena" />
+                                android:src="@drawable/tanglad" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -278,7 +278,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginBottom="25dp"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="Yerba Buena"
+                                android:text="Cymbopogon citratus"
                                 android:textColor="#8B9F5B"
                                 android:textSize="14dp"
                                 android:textStyle="bold" />
