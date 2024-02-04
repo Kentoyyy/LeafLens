@@ -10,12 +10,26 @@ import android.widget.Button;
 public class MainActivity extends AppCompatActivity {
 
     Button btnStarted;
+
+    Button camera;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
         btnStarted = (Button) findViewById(R.id.Btn_start);
+        camera = (Button) findViewById(R.id.buttonCamera);
+
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Camera.class);
+                startActivity(intent);
+            }
+        });
+
         btnStarted.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -23,5 +37,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+
     }
 }

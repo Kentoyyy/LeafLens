@@ -6,11 +6,6 @@
         android:icon="@drawable/leaf"/>
 
     <item
-        android:id="@+id/menuScan"
-        android:title="Camera"
-        android:icon="@drawable/baseline_photo_camera_24"/>
-
-    <item
         android:id="@+id/menuWater"
         android:title="Water"
         android:icon="@drawable/baseline_water_drop_24"/>

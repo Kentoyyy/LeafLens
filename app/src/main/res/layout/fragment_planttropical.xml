@@ -8,16 +8,7 @@
     tools:context=".PlantTropicalFragment">
 
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="320dp"
-        android:layout_height="45dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="90dp"
-        app:cardBackgroundColor="#ebf9ea"
-        app:cardCornerRadius="10dp">
 
-
-    </androidx.cardview.widget.CardView>
 
 
     <Button
@@ -44,7 +35,7 @@
         <ScrollView
             android:layout_width="match_parent"
             android:layout_height="615dp"
-            android:layout_marginTop="150dp"
+            android:layout_marginTop="80dp"
             android:elevation="2dp">
 
             <LinearLayout
@@ -62,7 +53,7 @@
                         android:layout_height="170dp"
                         android:layout_marginLeft="35dp"
                         android:layout_marginTop="30dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:backgroundTint="#e8f6ee"
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
 
@@ -110,7 +101,7 @@
                         android:layout_height="140dp"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="30dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:backgroundTint="#e8f6ee"
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
 
@@ -206,7 +197,7 @@
                         android:layout_height="220dp"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="180dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:backgroundTint="#e8f6ee"
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
 
@@ -253,8 +244,8 @@
                         android:layout_width="170dp"
                         android:layout_height="220dp"
                         android:layout_marginLeft="30dp"
-                        android:layout_marginTop="440dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:layout_marginTop="450dp"
+                        android:backgroundTint="#e8f6ee"
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
 
@@ -302,7 +293,7 @@
                         android:layout_height="220dp"
                         android:layout_marginLeft="30dp"
                         android:layout_marginTop="210dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:backgroundTint="#e8f6ee"
 
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
@@ -399,7 +390,7 @@
                         android:layout_height="190dp"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="630dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:backgroundTint="#e8f6ee"
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
 
@@ -447,7 +438,7 @@
                         android:layout_height="190dp"
                         android:layout_marginLeft="220dp"
                         android:layout_marginTop="830dp"
-                        android:backgroundTint="#ebf9ea"
+                        android:backgroundTint="#e8f6ee"
                         android:elevation="2dp"
                         app:cardCornerRadius="7dp">
 

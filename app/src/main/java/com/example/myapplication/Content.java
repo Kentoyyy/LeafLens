@@ -34,10 +34,6 @@ public class Content extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
 
-                    case R.id.menuScan:
-                        fragment = new CameraFragment();
-                        break;
-
                     case R.id.menuWater:
                         fragment = new WaterFragment();
                         break;

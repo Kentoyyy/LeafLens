@@ -39,8 +39,8 @@
 
 
     <Button
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="180dp"
+        android:layout_height="45dp"
         android:background="@drawable/start_bg"
         android:text="Let's Start"
         android:id="@+id/Btn_start"
@@ -49,7 +49,22 @@
         android:textColor="#fff"
         android:fontFamily="sans-serif-condensed"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="730dp"/>
+        android:layout_marginTop="710dp"/>
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="45dp"
+        android:background="@drawable/start_bg"
+        android:text="Camera"
+        android:id="@+id/buttonCamera"
+        android:textSize="11dp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="765dp"/>
+
+
 
 
 

@@ -26,7 +26,6 @@
         android:textStyle="bold"
         android:textColor="#9E9E9E"
         android:layout_centerHorizontal="true"
-
         android:fontFamily="sans-serif-condensed"
         android:layout_marginTop="620dp"/>
 
@@ -38,7 +37,6 @@
         android:layout_centerHorizontal="true"
         android:textColor="#9E9E9E"
         android:textStyle="bold"
-
         android:fontFamily="sans-serif-condensed"
         android:textSize="12dp"/>
 

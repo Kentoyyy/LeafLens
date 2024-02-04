@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
-import static android.app.Activity.RESULT_OK;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.Manifest;
 import android.content.Intent;
@@ -8,15 +9,8 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.media.ThumbnailUtils;
 import android.os.Bundle;
-
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-import androidx.fragment.app.Fragment;
-
 import android.provider.MediaStore;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -24,50 +18,45 @@ import android.widget.TextView;
 import com.example.myapplication.ml.ModelUnquant;
 
 import org.tensorflow.lite.DataType;
-import org.tensorflow.lite.schema.Model;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
-
-public class CameraFragment extends Fragment {
+public class Camera extends AppCompatActivity {
 
     TextView result, confidence;
     ImageView imageView;
     Button picture;
     int imageSize = 224;
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_camera, container, false);
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_camera);
 
-        result.findViewById(R.id.result);
-        confidence.findViewById(R.id.confidence);
-        imageView.findViewById(R.id.imageView);
-        picture.findViewById(R.id.button);
+        result = findViewById(R.id.result);
+        confidence = findViewById(R.id.confidence);
+        imageView = findViewById(R.id.imageView);
+        picture = findViewById(R.id.button);
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (ContextCompat.checkSelfPermission(requireContext(), Manifest.permission.CAMERA)
-                        == PackageManager.PERMISSION_GRANTED) {
-                    // Camera permission granted, launch camera
+                // Launch camera if we have permission
+                if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
                     Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                     startActivityForResult(cameraIntent, 1);
                 } else {
-                    // Camera permission not granted, request it
+                    //Request camera permission if we don't have it.
                     requestPermissions(new String[]{Manifest.permission.CAMERA}, 100);
                 }
             }
         });
-        return view;
     }
     public void classifyImage(Bitmap image){
         try {
-            ModelUnquant model = ModelUnquant.newInstance(getContext());
+            ModelUnquant model = ModelUnquant.newInstance(getApplicationContext());
 
 
             TensorBuffer inputFeature0 = TensorBuffer.createFixedSize(new int[]{1, 224, 224, 3}, DataType.FLOAT32);
