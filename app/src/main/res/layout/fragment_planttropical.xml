@@ -263,7 +263,7 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/tanglad"
+                                android:id="@+id/btntanglad"
                                 android:layout_width="120dp"
                                 android:layout_height="150dp"
                                 android:layout_centerHorizontal="true"
@@ -408,7 +408,7 @@
                             android:layout_height="match_parent">
 
                             <ImageView
-                                android:id="@+id/btnLagundi"
+                                android:id="@+id/btnLaagundi"
                                 android:layout_width="120dp"
                                 android:layout_height="150dp"
                                 android:layout_centerHorizontal="true"

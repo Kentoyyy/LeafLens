@@ -1,5 +1,7 @@
 package com.example.myapplication;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -10,6 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
+import java.net.URL;
+
 
 public class LagundiFragment extends Fragment {
     Button backbtn;
@@ -19,6 +23,7 @@ public class LagundiFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_lagundi, container, false);
+
 
         backbtn = view.findViewById(R.id.backbtntropical);
 
@@ -32,4 +37,5 @@ public class LagundiFragment extends Fragment {
         });
         return view;
     }
+
 }

@@ -14,7 +14,7 @@ import android.widget.ImageView;
 
 public class PlantTropicalFragment extends Fragment {
 
-    ImageView btnaloe,btntulsi,btnwildtea,btnbittergroud,btnyerbabuena;
+    ImageView btnaloe,btntulsi,btnwildtea,btnbittergroud,btnyerbabuena,btnLagundi, btntanglakd;
 
     Button btnbacktropical;
 
@@ -26,6 +26,9 @@ public class PlantTropicalFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_planttropical, container, false);
 
 
+        btntanglakd = view.findViewById(R.id.btntanglad);
+
+        btnLagundi = view.findViewById(R.id.btnLaagundi);
 
         btnbittergroud = view.findViewById(R.id.btnAmpalaya);
 
@@ -41,7 +44,22 @@ public class PlantTropicalFragment extends Fragment {
         btnbacktropical = view.findViewById(R.id.btnBackTl);
 
 
-
+        btntanglakd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment Tanglad = new TangladFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, Tanglad).commit();
+            }
+        });
+        btnLagundi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment Lagundi = new LagundiFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, Lagundi).commit();
+            }
+        });
 
         btnbacktropical.setOnClickListener(new View.OnClickListener() {
             @Override
