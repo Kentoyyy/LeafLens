@@ -46,7 +46,7 @@
             app:cardCornerRadius="10dp">
 
             <Button
-                android:id="@+id/btn_plantstip"
+                android:id="@+id/btnTIps"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:layout_margin="15dp"

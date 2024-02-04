@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageButton;
 
 
@@ -15,6 +16,10 @@ public class HomeFragment extends Fragment {
 
 
     ImageButton btntropical;
+
+    Button btntips;
+
+
 
 
     @Override
@@ -26,6 +31,17 @@ public class HomeFragment extends Fragment {
 
 
         btntropical = view.findViewById(R.id.btnTropical);
+
+        btntips = view.findViewById(R.id.btnTIps);
+
+        btntips.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment tips = new PlantTipsFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, tips).commit();
+            }
+        });
 
         btntropical.setOnClickListener(new View.OnClickListener() {
             @Override
