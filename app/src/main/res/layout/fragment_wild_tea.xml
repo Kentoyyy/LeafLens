@@ -66,42 +66,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aloe vera is a medicinal herb with thick, gel-filled leaves."
+                android:text="Wild tea, also known as tsaang gubat, is a type of herbal tea made from the leaves of the wild tea plant (Ehretia microphylla), hich is native to the Philippines and other parts of Southeast Asia. Tsaang gubat is traditionally used in Filipino folk medicine for its medicinal properties.  "
                 android:textSize="13dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
-                android:layout_marginTop="150dp"/>
+                android:layout_marginTop="140dp"/>
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="It's used for its soothing and healing properties"
-                android:textSize="14dp"
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
 
-                android:layout_marginTop="165dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="topically for sunburns, cuts, and skin irritation."
-                android:textSize="14dp"
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-
-                android:layout_marginTop="180dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Easy to grow and commonly found in skincare products."
-                android:textSize="14dp"
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-
-                android:layout_marginTop="195dp"/>
 
 
             <Button

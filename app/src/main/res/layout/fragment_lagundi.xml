@@ -67,42 +67,42 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aloe vera is a medicinal herb with thick, gel-filled leaves."
+                android:text="Lagundi is a medicinal plant native to the Philippines"
                 android:textSize="13dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
-                android:layout_marginTop="150dp"/>
+                android:layout_marginTop="140dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="It's used for its soothing and healing properties"
+                android:text="known scientifically as Vitex negundo."
                 android:textSize="14dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
-                android:layout_marginTop="165dp"/>
+                android:layout_marginTop="155dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="topically for sunburns, cuts, and skin irritation."
-                android:textSize="14dp"
+                android:text="It has been traditionally used in Filipino folk medicine for its therapeutic properties."
+                android:textSize="13dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
-                android:layout_marginTop="180dp"/>
+                android:layout_marginTop="170dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Easy to grow and commonly found in skincare products."
+                android:text="Lagundi is valued for its leaves, which contain compounds believed to have anti-inflammatory, analgesic, and antispasmodic effects."
                 android:textSize="14dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
-                android:layout_marginTop="195dp"/>
+                android:layout_marginTop="200dp"/>
 
 
             <Button

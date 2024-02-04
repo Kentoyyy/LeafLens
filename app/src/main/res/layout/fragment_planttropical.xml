@@ -134,7 +134,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginBottom="25dp"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="Sambong"
+                                android:text="Tulsi"
                                 android:textColor="#8B9F5B"
                                 android:textSize="14dp"
                                 android:textStyle="bold" />

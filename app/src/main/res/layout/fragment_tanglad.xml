@@ -68,42 +68,12 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Aloe vera is a medicinal herb with thick, gel-filled leaves."
+                android:text="Lemongrass, also known as tanglad, is a tropical herb with a refreshing citrus flavor and aroma. It is commonly used in Asian cuisine, particularly in soups, curries, and stir-fries, to add a bright, lemony zest to dishes."
                 android:textSize="13dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
                 android:layout_marginTop="150dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="It's used for its soothing and healing properties"
-                android:textSize="14dp"
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-
-                android:layout_marginTop="165dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="topically for sunburns, cuts, and skin irritation."
-                android:textSize="14dp"
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-
-                android:layout_marginTop="180dp"/>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Easy to grow and commonly found in skincare products."
-                android:textSize="14dp"
-                android:textColor="#000"
-                android:layout_marginLeft="20dp"
-
-                android:layout_marginTop="195dp"/>
 
 
             <Button
@@ -113,7 +83,7 @@
                 android:textSize="11dp"
                 android:background="@drawable/btnplant_round"
                 android:textColor="#fff"
-                android:layout_marginTop="250dp"
+                android:layout_marginTop="270dp"
                 android:layout_marginLeft="110dp"/>
 
 
