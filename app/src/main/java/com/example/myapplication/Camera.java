@@ -94,14 +94,15 @@ public class Camera extends AppCompatActivity {
                     maxPos = 1;
                 }
             }
-            String [] classes = {"Lagundi", "Aloe Vera"};
+            String[] classes = {"Aloe Vera", "Lagundi", "Sambong", "Malunggay"};
             result.setText(classes[maxPos]);
 
             String s = "";
             for(int i = 0; i < classes.length; i++){
                 s += String.format("%s: %.1f%%\n", classes[i], confidences[i] * 100);
-
             }
+
+
             confidence.setText(s);
 
             // Releases model resources if no longer used.
