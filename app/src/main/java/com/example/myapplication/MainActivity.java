@@ -11,14 +11,14 @@ public class MainActivity extends AppCompatActivity {
 
     Button btnStarted;
 
-    Button camera;
+    Button camera,notify;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
 
-
+        notify = (Button)findViewById(R.id.buttonAlarm);
         btnStarted = (Button) findViewById(R.id.Btn_start);
         camera = (Button) findViewById(R.id.buttonCamera);
 
@@ -26,6 +26,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(MainActivity.this, Camera.class);
+                startActivity(intent);
+            }
+        });
+
+        notify.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Notication.class);
                 startActivity(intent);
             }
         });

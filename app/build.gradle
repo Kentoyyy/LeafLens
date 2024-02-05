@@ -28,6 +28,10 @@ android {
     }
     buildFeatures {
         mlModelBinding true
+
+    }
+    viewBinding {
+        enabled = true
     }
 }
 
