@@ -5,11 +5,6 @@
         android:title="Home"
         android:icon="@drawable/leaf"/>
 
-    <item
-        android:id="@+id/menuWater"
-        android:title="Water"
-        android:icon="@drawable/baseline_water_drop_24"/>
-
 
 
 

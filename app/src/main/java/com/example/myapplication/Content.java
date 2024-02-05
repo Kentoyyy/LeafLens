@@ -34,9 +34,7 @@ public class Content extends AppCompatActivity {
                         fragment = new HomeFragment();
                         break;
 
-                    case R.id.menuWater:
-                        fragment = new WaterFragment();
-                        break;
+
                 }
                 getSupportFragmentManager().beginTransaction().replace(R.id.body_container, fragment).commit();
 

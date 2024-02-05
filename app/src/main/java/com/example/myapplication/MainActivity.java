@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
-        notify = (Button)findViewById(R.id.buttonAlarm);
+        notify = (Button)findViewById(R.id.btnNotify);
         btnStarted = (Button) findViewById(R.id.Btn_start);
         camera = (Button) findViewById(R.id.buttonCamera);
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         notify.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Notication.class);
+                Intent intent = new Intent(MainActivity.this, SetReminder.class);
                 startActivity(intent);
             }
         });
