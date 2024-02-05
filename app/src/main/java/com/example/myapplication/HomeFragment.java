@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 
+
 public class HomeFragment extends Fragment {
 
 
@@ -30,9 +31,12 @@ public class HomeFragment extends Fragment {
 
 
 
+
         btntropical = view.findViewById(R.id.btnTropical);
 
         btntips = view.findViewById(R.id.btnTIps);
+
+
 
         btntips.setOnClickListener(new View.OnClickListener() {
             @Override

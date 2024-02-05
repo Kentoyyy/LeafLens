@@ -12,7 +12,7 @@
         android:layout_width="35dp"
         android:layout_height="30dp"
         android:layout_margin="30dp"
-        android:id="@+id/backbtntropical"
+        android:id="@+id/backbtn"
         android:background="@drawable/baseline_arrow_back_24"/>
 
 
@@ -26,6 +26,7 @@
 
         <androidx.appcompat.widget.SearchView
             android:layout_width="50dp"
+
             android:layout_height="50dp"
 
             android:elevation="2dp" />
@@ -268,7 +269,7 @@
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
-                            android:background="#fff"
+                            android:background="@drawable/shapeplantguide"
                             android:scaleType="fitCenter"
                             android:src="@drawable/aloevera_leaves" />
 
@@ -303,16 +304,16 @@
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
-                            android:background="#fff"
+                            android:background="@drawable/shapeplantguide"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/aloevera_leaves" />
+                            android:src="@drawable/sambong" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:layout_marginTop="200dp"
-                            android:text="Aloe vera"
+                            android:text="Sambong"
                             android:textColor="#575757"
                             android:textSize="13dp" />
                     </RelativeLayout>
@@ -337,16 +338,16 @@
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
-                            android:background="#fff"
+                            android:background="@drawable/shapeplantguide"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/aloevera_leaves" />
+                            android:src="@drawable/tanglad" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:layout_marginTop="200dp"
-                            android:text="Aloe vera"
+                            android:text="Tanglad"
                             android:textColor="#575757"
                             android:textSize="13dp" />
                     </RelativeLayout>

@@ -18,27 +18,43 @@ import android.widget.TextView;
 import com.example.myapplication.ml.ModelUnquant;
 
 import org.tensorflow.lite.DataType;
+import org.tensorflow.lite.schema.Model;
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 
+
+
 public class Camera extends AppCompatActivity {
 
     TextView result, confidence;
     ImageView imageView;
-    Button picture;
+    Button picture,camera;
+    boolean imageScanned = false;
     int imageSize = 224;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_camera);
 
+
+        camera = findViewById(R.id.btnBackCamera);
         result = findViewById(R.id.result);
         confidence = findViewById(R.id.confidence);
         imageView = findViewById(R.id.imageView);
+
         picture = findViewById(R.id.button);
+
+
+        camera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Camera.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         picture.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,31 +87,35 @@ public class Camera extends AppCompatActivity {
             for(int i = 0; i < imageSize; i++){
                 for(int j = 0; j < imageSize; j++){
                     int val = intValues[pixel++]; // RGB
-                    byteBuffer.putFloat(((val >>> 16) & 0xFF) * (1.f / 255.f));
-                    byteBuffer.putFloat(((val >>> 8) & 0xFF) * (1.f / 255.f));
+                    byteBuffer.putFloat(((val >> 16) & 0xFF) * (1.f / 255.f));
+                    byteBuffer.putFloat(((val >> 8) & 0xFF) * (1.f / 255.f));
                     byteBuffer.putFloat((val & 0xFF) * (1.f / 255.f));
-
                 }
             }
+
 
 
             inputFeature0.loadBuffer(byteBuffer);
 
-
+            // Runs model inference and gets result.
             ModelUnquant.Outputs outputs = model.process(inputFeature0);
             TensorBuffer outputFeature0 = outputs.getOutputFeature0AsTensorBuffer();
 
             float[] confidences = outputFeature0.getFloatArray();
+            // find the index of the class with the biggest confidence.
             int maxPos = 0;
+
             float maxConfidence = 0;
             for(int i = 0; i < confidences.length; i++){
                 if(confidences[i] > maxConfidence){
                     maxConfidence = confidences[i];
-                    maxPos = 1;
+                    maxPos = i;
+
                 }
             }
-            String[] classes = {"Aloe Vera", "Lagundi", "Sambong", "Malunggay"};
+            String[] classes = {"AloeVera","Sambong","Lagundi","Malunggay"};
             result.setText(classes[maxPos]);
+
 
             String s = "";
             for(int i = 0; i < classes.length; i++){
@@ -107,6 +127,7 @@ public class Camera extends AppCompatActivity {
 
             // Releases model resources if no longer used.
             model.close();
+            imageScanned = true;
         } catch (IOException e) {
             // TODO Handle the exception
         }
