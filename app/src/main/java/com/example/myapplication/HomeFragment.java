@@ -16,7 +16,7 @@ import android.widget.ImageButton;
 public class HomeFragment extends Fragment {
 
 
-    ImageButton btntropical;
+    ImageButton btntropical, btnguidealoevera;
 
     Button btntips;
 
@@ -30,7 +30,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-
+        btnguidealoevera = view.findViewById(R.id.btnGuideAloevera);
 
         btntropical = view.findViewById(R.id.btnTropical);
 

@@ -269,6 +269,7 @@
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
+                            android:id="@+id/btnGuideAloevera"
                             android:background="@drawable/shapeplantguide"
                             android:scaleType="fitCenter"
                             android:src="@drawable/aloevera_leaves" />
