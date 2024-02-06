@@ -61,6 +61,14 @@ public class SetReminder extends AppCompatActivity implements View.OnClickListen
         btn_water1.setOnClickListener(this);
         btn_water2.setOnClickListener(this);
 
+        buttonback.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(SetReminder.this, MainActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

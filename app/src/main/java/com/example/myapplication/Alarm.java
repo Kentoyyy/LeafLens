@@ -25,7 +25,7 @@ public class Alarm extends BroadcastReceiver {
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, "LeafLens")
                 .setSmallIcon(R.drawable.baseline_circle_notifications_24)
                 .setContentTitle("Reminder")
-                .setContentText("It's time shower your water!")
+                .setContentText("It's time shower your plants!")
                 .setAutoCancel(true)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
                 .setPriority(NotificationCompat.PRIORITY_HIGH)

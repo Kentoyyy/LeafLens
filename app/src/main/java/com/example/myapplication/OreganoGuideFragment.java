@@ -11,17 +11,17 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 
-public class AloeveraGuideFragment extends Fragment {
-
+public class OreganoGuideFragment extends Fragment {
     Button btnback;
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_aloevera_guide, container, false);
+        View view = inflater.inflate(R.layout.fragment_oregano_guide, container, false);
 
-        btnback = view.findViewById(R.id.backbtnguide);
+        btnback = view.findViewById(R.id.backbtnguidOregano);
 
         btnback.setOnClickListener(new View.OnClickListener() {
             @Override

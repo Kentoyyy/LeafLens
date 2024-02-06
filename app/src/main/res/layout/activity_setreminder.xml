@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#fff"
     tools:context=".SetReminder">
 
     <Button
@@ -35,7 +36,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="390dp"
                 android:layout_height="720dp"
-                app:cardBackgroundColor="#FDFDFD"
+                app:cardBackgroundColor="#CAE1CB"
                 app:cardCornerRadius="10dp"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="100dp">
@@ -63,15 +64,21 @@
                         android:layout_marginTop="130dp"
                         android:textAlignment="center"
                         android:text="Set AM Water Schedule"
+                        android:textColor="#595959"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
 
                     <TimePicker
-                        android:layout_gravity="center|top"
                         android:id="@+id/timeam"
                         android:layout_width="match_parent"
-                        android:layout_marginTop="150dp"
                         android:layout_height="140dp"
+                        android:layout_gravity="center|top"
+                        android:layout_marginTop="150dp"
+                        android:amPmBackgroundColor="#000000"
+                        android:amPmTextColor="#000000"
+                        android:numbersBackgroundColor="#000"
+                        android:numbersSelectorColor="#000"
+                        android:numbersTextColor="#000"
                         android:timePickerMode="spinner" />
 
                     <Button
@@ -89,7 +96,8 @@
                         android:textStyle="bold"
                         android:layout_marginTop="300dp"
                         android:textAlignment="center"
-                        android:text="Set AM Water Reminder"
+                        android:textColor="#595959"
+                        android:text="Set PM Water Reminder"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"/>
 
@@ -98,6 +106,8 @@
                         android:id="@+id/timepm"
                         android:layout_width="match_parent"
                         android:layout_marginTop="350dp"
+                        android:numbersBackgroundColor="#000"
+                        android:numbersSelectorColor="#000"
                         android:layout_height="140dp"
                         android:timePickerMode="spinner" />
 
@@ -113,9 +123,10 @@
 
                     <ImageView
                         android:layout_width="200dp"
-                        android:layout_height="130dp"
+                        android:layout_height="150dp"
                         android:background="@drawable/clockimage"
                         android:layout_centerHorizontal="true"
+
                         android:layout_marginTop="580dp"/>
 
 

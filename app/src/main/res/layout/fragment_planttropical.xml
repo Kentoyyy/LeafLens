@@ -453,7 +453,7 @@
                                 android:layout_centerHorizontal="true"
                                 android:layout_marginTop="5dp"
                                 android:clickable="true"
-                                android:src="@drawable/akapulko" />
+                                android:src="@drawable/oregano" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -462,7 +462,7 @@
                                 android:layout_marginLeft="10dp"
                                 android:layout_marginBottom="25dp"
                                 android:fontFamily="sans-serif-condensed"
-                                android:text="Akapulko"
+                                android:text="Oregano"
                                 android:textColor="#8B9F5B"
                                 android:textSize="14dp"
                                 android:textStyle="bold" />
@@ -477,6 +477,8 @@
                                 android:text="Lorem ipsum dolor si"
                                 android:textColor="#8B9F5B"
                                 android:textSize="12dp" />
+
+
 
                         </RelativeLayout>
                     </androidx.cardview.widget.CardView>

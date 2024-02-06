@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#e8f6ee"
+
     tools:context=".TangladFragment">
 
     <Button
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Cymbopogon citratus"
+                android:text="Tanglad"
                 android:textColor="#00600f"
                 android:textSize="22dp"
                 android:textStyle="bold" />
@@ -76,15 +76,7 @@
                 android:layout_marginTop="150dp"/>
 
 
-            <Button
-                android:layout_width="130dp"
-                android:layout_height="35dp"
-                android:text="More info"
-                android:textSize="11dp"
-                android:background="@drawable/btnplant_round"
-                android:textColor="#fff"
-                android:layout_marginTop="270dp"
-                android:layout_marginLeft="110dp"/>
+
 
 
 

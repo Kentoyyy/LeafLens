@@ -12,7 +12,7 @@
         android:layout_width="35dp"
         android:layout_height="30dp"
         android:layout_margin="30dp"
-        android:id="@+id/backbtn"
+        android:id="@+id/backbtnhome"
         android:background="@drawable/baseline_arrow_back_24"/>
 
 
@@ -26,9 +26,9 @@
 
         <androidx.appcompat.widget.SearchView
             android:layout_width="50dp"
-
+            android:layout_marginTop="-3dp"
             android:layout_height="50dp"
-
+            android:backgroundTint="#000"
             android:elevation="2dp" />
 
     </androidx.cardview.widget.CardView>
@@ -305,16 +305,17 @@
                             android:layout_height="170dp"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
+                            android:id="@+id/oreganobtn"
                             android:background="@drawable/shapeplantguide"
                             android:scaleType="fitCenter"
-                            android:src="@drawable/sambong" />
+                            android:src="@drawable/oregano" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="15dp"
                             android:layout_marginTop="200dp"
-                            android:text="Sambong"
+                            android:text="Oregano"
                             android:textColor="#575757"
                             android:textSize="13dp" />
                     </RelativeLayout>

@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".WildTeaFragment">
+    tools:context=".OreganoFragment">
+
     <Button
         android:layout_width="35dp"
         android:layout_height="30dp"
@@ -22,7 +23,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
             android:elevation="2dp"
-            android:src="@drawable/wildtea" />
+            android:src="@drawable/oregano" />
 
         <androidx.cardview.widget.CardView
             android:layout_width="350dp"
@@ -38,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Wild Tea"
+                android:text="Oregano"
                 android:textColor="#00600f"
                 android:textSize="22dp"
                 android:textStyle="bold" />
@@ -66,12 +67,14 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Wild tea, also known as tsaang gubat, is a type of herbal tea made from the leaves of the wild tea plant (Ehretia microphylla), hich is native to the Philippines and other parts of Southeast Asia. Tsaang gubat is traditionally used in Filipino folk medicine for its medicinal properties.  "
+                android:text="In medicinal use, oregano is prized for its potential health benefits, thanks to its rich array of compounds, including antioxidants, flavonoids, and essential oils such as carvacrol and thymol. These properties have led to its traditional use in natural medicine for various ailments."
                 android:textSize="13dp"
                 android:textColor="#000"
                 android:layout_marginLeft="20dp"
 
                 android:layout_marginTop="140dp"/>
+
+
 
 
 

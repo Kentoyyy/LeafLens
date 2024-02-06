@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#e8f6ee"
+
     tools:context=".LagundiFragment">
     <Button
         android:layout_width="35dp"
@@ -105,16 +105,6 @@
                 android:layout_marginTop="200dp"/>
 
 
-            <Button
-                android:layout_width="130dp"
-                android:layout_height="35dp"
-                android:text="More info"
-                android:textSize="11dp"
-                android:background="@drawable/btnplant_round"
-                android:textColor="#fff"
-                android:id="@+id/weblink"
-                android:layout_marginTop="270dp"
-                android:layout_marginLeft="110dp"/>
 
 
 

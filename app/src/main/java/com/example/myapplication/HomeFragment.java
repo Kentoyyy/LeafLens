@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -16,9 +17,9 @@ import android.widget.ImageButton;
 public class HomeFragment extends Fragment {
 
 
-    ImageButton btntropical, btnguidealoevera;
+    ImageButton btntropical, btnguidealoevera, btnguideOragano;
 
-    Button btntips;
+    Button btntips, home;
 
 
 
@@ -29,12 +30,17 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-
+        btnguideOragano = view.findViewById(R.id.oreganobtn);
         btnguidealoevera = view.findViewById(R.id.btnGuideAloevera);
 
         btntropical = view.findViewById(R.id.btnTropical);
 
         btntips = view.findViewById(R.id.btnTIps);
+
+        home = view.findViewById(R.id.backbtnhome);
+
+
+
 
 
 
@@ -46,6 +52,25 @@ public class HomeFragment extends Fragment {
                 ft.replace(R.id.body_container, tips).commit();
             }
         });
+
+        btnguideOragano.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment tips = new OreganoGuideFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, tips).commit();
+            }
+        });
+
+        btnguidealoevera.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Fragment tips = new AloeveraGuideFragment();
+                FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
+                ft.replace(R.id.body_container, tips).commit();
+            }
+        });
+
 
         btntropical.setOnClickListener(new View.OnClickListener() {
             @Override

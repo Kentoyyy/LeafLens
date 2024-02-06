@@ -113,7 +113,7 @@ public class Camera extends AppCompatActivity {
 
                 }
             }
-            String[] classes = {"AloeVera","Sambong","Lagundi","Malunggay"};
+            String[] classes = {"Lagundi","Oregano","Malunggay", "Pansit Pansitan","Luya"};
             result.setText(classes[maxPos]);
 
 
